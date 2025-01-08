@@ -1,3 +1,3 @@
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-<p>Hola Mundo!</p>
-`
+import main from './main.html';
+
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `${main}`
