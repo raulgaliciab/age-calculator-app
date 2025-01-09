@@ -1,16 +1,38 @@
-<main>
-  <form action="submit" method="POST">
-    <input type="number" placeholder="DD" min="1" max="31" required>
-    <input type="number" placeholder="MM" min="1" max="12" required>
-    <input type="number" placeholder="YYYY" required>
-  </form>
-  <img src="" alt="Arrow">
-  <section id="results">
-    <span>--</span>
-    <p>years</p>
-    <span>--</span>
-    <p>months</p>
-    <span>--</span>
-    <p>days</p>
-  </section>
-</main>
+<body>
+  <main>
+    <form action="submit" method="POST">
+      <div>
+        <label for="">D A Y</label>
+        <input type="number" placeholder="DD" min="1" max="31" required>
+      </div>
+      <div>
+        <label for="">M O N T H</label>
+        <input type="number" placeholder="MM" min="1" max="12" required>
+      </div>
+      <div>
+        <label for="">Y E A R</label>
+        <input type="number" placeholder="YYYY" required>
+      </div>
+
+      <button type="submit">
+        <img src="../public/assets/images/icon-arrow.svg" alt="Arrow">
+      </button>
+
+    </form>
+
+    <section id="results">
+      <div>
+        <span>--</span>
+        <p>years</p>
+      </div>
+      <div>
+        <span>--</span>
+        <p>months</p>
+      </div>
+      <div>
+        <span>--</span>
+        <p>days</p>
+      </div>
+    </section>
+  </main>
+</body>
