@@ -36,7 +36,7 @@ main {
   height: 65.1rem;
   padding: 5.6rem;
   background-color: var(--white);
-  border-radius: 3rem;
+  border-radius: 3rem 3rem 40% 3rem;
 }
 
 /* Form */
@@ -52,6 +52,7 @@ form div {
   display: flex;
   margin-right: 3.2rem;
   flex-direction: column;
+  cursor: pointer;
 }
 
 form div label {
@@ -59,6 +60,7 @@ form div label {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--smokey-grey);
+  cursor: pointer;
 }
 
 form div input {
@@ -69,9 +71,15 @@ form div input {
   font-weight: 700;
   border: 2px solid var(--light-grey);
   border-radius: 0.8rem;
+  cursor: pointer;
 }
 
-/* Arrow image */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Arrow button */
 
 form button {
   display: flex;
@@ -85,6 +93,7 @@ form button {
   background-color: var(--primary-purple);
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 button img {
@@ -109,4 +118,15 @@ button img {
 .results div span {
   margin-right: 0.8rem;
   color: var(--primary-purple);
+}
+
+/* Pseudo-classes */
+
+form div input:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+}
+
+form button:active {
+  background-color: var(--off-black);
 }
