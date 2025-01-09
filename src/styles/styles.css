@@ -92,3 +92,21 @@ button img {
   width: 4.4rem;
   height: 4.4rem;
 }
+
+/* Results */
+
+.results {
+  font-size: 10.4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.results div {
+  display: flex;
+  height: 11.4rem;
+}
+
+.results div span {
+  margin-right: 0.8rem;
+  color: var(--primary-purple);
+}
