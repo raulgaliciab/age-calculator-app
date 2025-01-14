@@ -9,12 +9,12 @@ export const ageCalculator = ( dateInput:Date ) => {
   const yearOutput:number = diffYears( dateToday, dateInput );
 
   // Calculate the months difference
-  const monthsLeft = addYear( dateInput, yearOutput )
-  const monthsOutput = diffMonths( dateToday, monthsLeft );
+  const monthsLeft:Date = addYear( dateInput, yearOutput )
+  const monthsOutput:number = diffMonths( dateToday, monthsLeft );
 
   // Calculate the days difference
-  const daysLeft = addMonth( monthsLeft, monthsOutput );
-  const daysOutput = diffDays( dateToday, daysLeft );
+  const daysLeft:Date = addMonth( monthsLeft, monthsOutput );
+  const daysOutput:number = diffDays( dateToday, daysLeft );
 
 
   console.table( {
