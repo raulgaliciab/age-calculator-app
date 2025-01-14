@@ -1,4 +1,6 @@
-export const getDataForm = ( event:any ):Date => {
+import { ageCalculator } from "./ageCalculator";
+
+export const getDataForm = ( event:any ):void => {
 
   // Prevents browser refresh
   event.preventDefault();
@@ -6,10 +8,12 @@ export const getDataForm = ( event:any ):Date => {
   // Get inputs from the Form
   const formData = new FormData(event.target);
 
-  const day = formData.get('day-input');
-  const month = formData.get('month-input');
-  const year = formData.get('year-input');
+  const day:number = Number(formData.get('day-input'));
+  const month:number = Number(formData.get('month-input'));
+  const year:number = Number(formData.get('year-input'));
 
   // Returns the input in a Date format
-  return new Date(`${year}-${month}-${day}`);
+  const dateInput:Date = new Date(`${year}-${month}-${day}`);
+
+  ageCalculator( dateInput );
 }
