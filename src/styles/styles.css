@@ -32,11 +32,11 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  width: 84rem;
-  height: 65.1rem;
-  padding: 5.6rem;
+  width: 34.3rem;
+  height: 48.6rem;
+  padding: 4.8rem 2.4rem;
   background-color: var(--white);
-  border-radius: 3rem 3rem 40% 3rem;
+  border-radius: 3rem 3rem 25% 3rem;
 }
 
 /* Form */
@@ -44,30 +44,30 @@ main {
 form {
   display: flex;
   position: relative;
-  padding-bottom: 4.8rem;
+  padding-bottom: 6.4rem;
   border-bottom: 1px solid var(--light-grey);
 }
 
 form div {
   display: flex;
-  margin-right: 3.2rem;
+  margin-right: 1.6rem;
   flex-direction: column;
   cursor: pointer;
 }
 
 form div label {
-  margin-bottom: 1.2rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--smokey-grey);
   cursor: pointer;
 }
 
 form div input {
-  width: 16rem;
-  height: 7.2rem;
-  padding: 2.4rem 1.2rem;
-  font-size: 3.3rem;
+  width: 8.76rem;
+  height: 5.4rem;
+  padding: 1.6rem 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   border: 2px solid var(--light-grey);
   border-radius: 0.8rem;
@@ -84,10 +84,10 @@ input::-webkit-inner-spin-button {
 form button {
   display: flex;
   position: absolute;
-  bottom: -4.8rem;
-  right: 0;
-  width: 9.6rem;
-  height: 9.6rem;
+  bottom: -3.2rem;
+  right: 11.6rem;
+  width: 6.4rem;
+  height: 6.4rem;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-purple);
@@ -98,21 +98,22 @@ form button {
 
 button img {
   display: flex;
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 /* Results */
 
 .results {
-  font-size: 10.4rem;
+  margin-top: 6.4rem;
+  font-size: 5.4rem;
   font-weight: 800;
   font-style: italic;
 }
 
 .results div {
   display: flex;
-  height: 11.4rem;
+  height: 6.2rem;
 }
 
 .results div span {
