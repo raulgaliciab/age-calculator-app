@@ -131,3 +131,20 @@ form div input:focus {
 form button:active {
   background-color: var(--off-black);
 }
+
+/* Validation classes */
+
+#day-error, #month-error, #year-error {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-light-red);
+}
+
+.label-error {
+  color: var(--primary-light-red);
+}
+
+.input-error {
+  border-color: var(--primary-light-red);
+}
