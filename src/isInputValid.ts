@@ -1,6 +1,6 @@
 import { isAfter } from "@formkit/tempo";
 
-export const dateValidation = ( day:number, month:number, year:number ):boolean => {
+export const isInputValid = ( day:number, month:number, year:number ):boolean => {
 
   // Queries for error handle in DOM
 

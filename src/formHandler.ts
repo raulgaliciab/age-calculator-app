@@ -1,5 +1,6 @@
 import { ageCalculator } from "./ageCalculator";
-import { dateValidation } from "./dateValidation";
+import { isDateValid } from "./isDateValid";
+import { isInputValid } from "./isInputValid";
 
 export const getDataForm = ( event:any ):void => {
 
@@ -15,11 +16,17 @@ export const getDataForm = ( event:any ):void => {
 
   // Input validation
 
-  if ( !dateValidation( day, month, year ) ) {
+  if ( !isInputValid( day, month, year ) ) {
     return;
   }
 
-  // Returns the input in a Date format
+  // Is Date Valid?
+  
+  if ( !isDateValid( day, month, year ) ) {
+    return;
+  }
+
+  // Saves the input in a Date format
   const dateInput:Date = new Date(`${year}-${month}-${day}`);
 
   ageCalculator( dateInput );
