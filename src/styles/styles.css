@@ -134,9 +134,11 @@ form button:active {
 
 /* Validation classes */
 
-#day-error, #month-error, #year-error {
+#day-error,
+#month-error,
+#year-error {
   margin-top: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--primary-light-red);
 }

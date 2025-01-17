@@ -18,8 +18,8 @@ export const isDateValid = ( day:number, month:number, year:number ):boolean => 
 
   // Verification for a valid Date
 
-  if ( dateInput.getDay() !== day ||
-      dateInput.getMonth() !== month ||
+  if ( dateInput.getDate() !== day ||
+      dateInput.getMonth() !== month - 1 ||
       dateInput.getFullYear() !== year ) {
 
     dayLabel!.classList.add('label-error');
@@ -48,6 +48,6 @@ export const isDateValid = ( day:number, month:number, year:number ):boolean => 
   yearInput!.classList.remove('input-error');
 
   // If none of the validation fails, returns true
-  
+
   return true;
 }

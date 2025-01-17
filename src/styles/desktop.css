@@ -55,4 +55,12 @@
       height: 11.4rem;
     }
 
+    /* Validation classes */
+
+    #day-error,
+    #month-error,
+    #year-error {
+      font-size: 1.2rem;
+    }
+
 }
