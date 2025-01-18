@@ -1,7 +1,7 @@
 import { ageCalculator } from "./ageCalculator";
-import { isDateValid } from "./isDateValid";
-import { isFormFilled } from "./isFormFilled";
-import { isInputValid } from "./isInputValid";
+import { isDateValid } from "./validation/isDateValid";
+import { isFormFilled } from "./validation/isFormFilled";
+import { isInputValid } from "./validation/isInputValid";
 
 export const getDataForm = ( event:any ):void => {
 
