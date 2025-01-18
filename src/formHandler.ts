@@ -1,5 +1,6 @@
 import { ageCalculator } from "./ageCalculator";
 import { isDateValid } from "./isDateValid";
+import { isFormFilled } from "./isFormFilled";
 import { isInputValid } from "./isInputValid";
 
 export const getDataForm = ( event:any ):void => {
@@ -14,13 +15,21 @@ export const getDataForm = ( event:any ):void => {
   const month:number = Number(formData.get('month-input'));
   const year:number = Number(formData.get('year-input'));
 
-  // Input validation
+
+  // Is the form filled?
+
+  if ( !isFormFilled( day, month, year )) {
+    return;
+  }
+  
+
+  // Are the individual inputs valid?
 
   if ( !isInputValid( day, month, year ) ) {
     return;
   }
 
-  // Is Date Valid?
+  // Is a valid Date?
   
   if ( !isDateValid( day, month, year ) ) {
     return;
