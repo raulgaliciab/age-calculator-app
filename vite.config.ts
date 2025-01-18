@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
-import raw from 'vite-raw-plugin';
+import htmlImport from '@ayatkyo/vite-plugin-html-import';
 
 export default defineConfig({
   plugins: [
-    raw({
-      fileRegex: /\.html$/, // Procesa solo archivos .html como strings
-    }),
+    htmlImport(),
   ],
 });
