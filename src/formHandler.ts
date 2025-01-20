@@ -36,7 +36,7 @@ export const getDataForm = ( event:any ):void => {
   }
 
   // Saves the input in a Date format
-  const dateInput:Date = new Date(`${year}-${month}-${day}`);
+  const dateInput:Date = new Date( year, month - 1, day );
 
   ageCalculator( dateInput );
 }

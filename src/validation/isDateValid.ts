@@ -14,7 +14,14 @@ export const isDateValid = ( day:number, month:number, year:number ):boolean => 
 
   // Getting the full date
 
-  const dateInput = new Date (`${year}-${month}-${day}`);
+  const dateInput = new Date ( year, (month -1), day );
+
+  console.log({
+    'Date Input': dateInput,
+    'Day': day,
+    'Month': month,
+    'Year': year
+  })
 
   // Verification for a valid Date
 
