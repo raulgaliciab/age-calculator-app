@@ -73,4 +73,4 @@ Users should be able to:
 ## Author
 
 - Raúl Galicia
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/raulgaliciab)
+- Frontend Mentor - [@raulgaliciab](https://www.frontendmentor.io/profile/raulgaliciab)
